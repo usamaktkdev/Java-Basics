@@ -1,20 +1,20 @@
-import java.util.Scanner; // Import the Scanner class
+import java.util.Scanner;
+
 public class Main{
     public static void main(String[] args) {
           Scanner scanner = new Scanner(System.in);
-          
-          
-          int number=0;
-          int num;
-          do { 
-            System.out.println("Enter Number : ");
-            int n = scanner.nextInt();
-            number = number+n;
-            num = n;
-            
-        } while (num!=0);
-          
-        System.out.println(number);
+         for (int i = 5; i >=1; i--) {
+             for (int j = 1; j <= 5-i; j++) {
+
+                 System.out.print(" ");
+             }
+             for (int k = 1; k <=i; k++) {
+
+                 System.out.print(k+" ");
+             }
+             System.out.println();
+         }
+        
     }
 }
 
